@@ -75,7 +75,7 @@ export default function ProjectsPage() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 auto-rows-max">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -89,11 +89,11 @@ export default function ProjectsPage() {
                   </h3>
                   <p className="text-gray-500 text-sm mt-1">{project.year}</p>
                 </div>
-                <ExternalLink className="w-5 h-5 text-magenta-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ExternalLink className="w-5 h-5 text-magenta-400 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
               </div>
 
               {/* Description */}
-              <p className="text-gray-400 mb-6 leading-relaxed">
+              <p className="text-gray-400 mb-6 leading-relaxed flex-grow">
                 {project.description}
               </p>
 
@@ -112,17 +112,19 @@ export default function ProjectsPage() {
                 </div>
               </div>
 
-              {/* View Project Button */}
-              <a
-                href={project.link}
-                target={project.link !== "#" ? "_blank" : undefined}
-                rel={project.link !== "#" ? "noopener noreferrer" : undefined}
-                className="block"
-              >
-                <Button className="w-full mt-auto bg-gradient-to-r from-magenta-500 to-magenta-600 hover:from-magenta-600 hover:to-magenta-700 text-white font-semibold rounded-lg transition-all duration-300">
-                  View Project
-                </Button>
-              </a>
+              {/* View Project Button - Now properly aligned */}
+              <div className="mt-auto pt-4">
+                <a
+                  href={project.link}
+                  target={project.link !== "#" ? "_blank" : undefined}
+                  rel={project.link !== "#" ? "noopener noreferrer" : undefined}
+                  className="block"
+                >
+                  <Button className="w-full bg-gradient-to-r from-magenta-500 to-magenta-600 hover:from-magenta-600 hover:to-magenta-700 text-white font-semibold rounded-lg transition-all duration-300">
+                    View Project
+                  </Button>
+                </a>
+              </div>
             </div>
           ))}
         </div>
