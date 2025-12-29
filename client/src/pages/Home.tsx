@@ -464,7 +464,7 @@ export default function Home() {
                   </a>
                 </Button>
                 <Button variant="outline" className="border-accent text-accent hover:bg-accent/10">
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href="https://www.linkedin.com/in/nasemul-hasan-roni-82b4a3399" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     LinkedIn <Linkedin className="w-4 h-4" />
                   </a>
                 </Button>

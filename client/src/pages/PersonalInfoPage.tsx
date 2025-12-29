@@ -77,7 +77,7 @@ export default function PersonalInfoPage() {
                 <Linkedin className="w-5 h-5 text-cyan-400" />
                 <span className="text-sm text-gray-400">LinkedIn</span>
               </div>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 font-medium">
+              <a href="https://www.linkedin.com/in/nasemul-hasan-roni-82b4a3399" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 font-medium">
                 LinkedIn Profile
               </a>
             </div>
